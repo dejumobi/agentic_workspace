@@ -1,0 +1,1 @@
+print("Success: the new workspace is ready!")
