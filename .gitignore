@@ -1,3 +1,8 @@
 agent_env/
 .env
 __pycache__/
+*.onnx
+voices.json
+voices.bin
+*.part
+.venv/
