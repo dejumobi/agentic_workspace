@@ -1,0 +1,15 @@
+Recorded tenor saxophone audio — acoustic sample pack
+
+Source: Versilian Community Sample Library (VCSL), Versilian Studios LLC.
+https://versilian-studios.com/vcsl/
+https://github.com/sgossner/VCSL
+
+Recordings: Aerophones/Reed Aerophones/Tenor Saxophone/Non-Vibrato/
+BrettTenor_NV_Main_[note]_vl2_rr1.wav
+Licence: Creative Commons CC0 1.0 public-domain dedication.
+https://creativecommons.org/publicdomain/zero/1.0/
+
+Changes: leading silence trimmed; converted stereo WAV to mono MP3 at 128 kbps; cropped to 4.5 seconds. Nearest recorded whole-tone note was pitch shifted for intervening semitones. MIDI note numbers in this app use C4 = 60; source filenames use C3 for that same pitch. Below the recorded tenor range (concert Ab2, MIDI 44), notes are transposed from the lowest sample for other instrument selections.
+Playback preserves the recorded attack, applies volume and release envelopes, and loops a sustained section for longer notes. Demonstrations are assembled individual recorded notes; they are not a live legato performance.
+
+Previous FluidR3_GM soundfont samples have been replaced.

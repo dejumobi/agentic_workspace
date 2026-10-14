@@ -1,0 +1,1 @@
+V62: Dara section guidance uses pre-recorded UK male MP3 clips when available; includes generator and setup. Missing MP3s fall back to en-GB speech. Full dynamic lesson narration still uses browser speech. No changes to PianoWorx or GuitarWorx.

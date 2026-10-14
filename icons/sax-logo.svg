@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+<title id="title">SaxWorx saxophone</title>
+<defs><linearGradient id="brass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffe5a0"/><stop offset=".5" stop-color="#d7aa51"/><stop offset="1" stop-color="#f4d27c"/></linearGradient></defs>
+<rect width="512" height="512" rx="112" fill="#141c18"/>
+<g transform="translate(8 5)">
+<path d="M160 110l57 17 10-26-56-17z" fill="#d3ee8a"/>
+<path d="M218 115c39 9 56 31 43 69l-57 174c-12 37 1 65 36 72 42 8 76-14 84-53l17-65" fill="none" stroke="#0d1511" stroke-width="62" stroke-linecap="round"/>
+<path d="M218 115c39 9 56 31 43 69l-57 174c-12 37 1 65 36 72 42 8 76-14 84-53l17-65" fill="none" stroke="url(#brass)" stroke-width="43" stroke-linecap="round"/>
+<path d="M234 186l-54 165" stroke="#765b2a" stroke-width="8" stroke-linecap="round"/>
+<path d="M329 345c-6-38-18-60-28-79l105 26c-28 12-47 30-57 58z" fill="url(#brass)" stroke="#0d1511" stroke-width="7" stroke-linejoin="round"/>
+<ellipse cx="353" cy="279" rx="57" ry="18" transform="rotate(14 353 279)" fill="#604522" stroke="#f5d885" stroke-width="9"/>
+<ellipse cx="353" cy="279" rx="41" ry="8" transform="rotate(14 353 279)" fill="#141c18"/>
+<g fill="#f4f1d8" stroke="#8e703a" stroke-width="5"><circle cx="240" cy="210" r="12"/><circle cx="230" cy="241" r="12"/><circle cx="220" cy="272" r="12"/><circle cx="208" cy="305" r="12"/><circle cx="198" cy="336" r="12"/></g>
+<path d="M245 383c15 8 37 8 49-4" fill="none" stroke="#fff0b9" stroke-width="7" stroke-linecap="round"/>
+</g></svg>

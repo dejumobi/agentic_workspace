@@ -1,0 +1,1 @@
+V54: Clear homepage positioning, guided-practice benefits, Groove Lab selling point, studio offerings, creator introduction, trial and pricing calls to action. Preserves V53 audio fix and all existing studio/payment functionality.

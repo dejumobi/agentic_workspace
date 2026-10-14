@@ -1,0 +1,44 @@
+/* V68 mobile-first Android/PWA layout: prevent page overflow without shrinking text */
+html{max-width:100%;overflow-x:clip;-webkit-text-size-adjust:100%}
+body{max-width:100%;overflow-x:clip}
+*,*::before,*::after{box-sizing:border-box}
+img,video,canvas,svg,iframe{max-width:100%}
+iframe,video{height:auto;aspect-ratio:16/9}
+input,select,textarea,button{max-width:100%;min-width:0}
+input[type="range"]{max-width:100%}
+pre,code{overflow-wrap:anywhere}
+@media(max-width:700px){
+ body{width:100%;min-width:0}
+ main,#page,.card,.grid,.cards,.row,.controls,.guidedWorkspace{min-width:0;max-width:100%}
+ h1,h2,h3,p,small,label,button{overflow-wrap:break-word}
+ .grid,.cards,.classroomColumns,.songLayout,.saxExplorerGrid,.saxKeyList,.guidedWorkspace,.guidedOverviewOnly{grid-template-columns:minmax(0,1fr)!important}
+ .card{padding:clamp(12px,3.5vw,18px)}
+ .row,.controls{flex-wrap:wrap}
+ .row>*,.controls>*{min-width:0}
+ header{height:auto;min-height:0;gap:8px;padding-block:10px;align-items:center;justify-content:flex-start}
+ header .acctLink{white-space:normal}
+ header select{width:100%;flex:1 1 100%;min-width:0!important}
+ aside{padding:10px 12px!important}
+ aside nav{margin-top:8px;display:flex;overflow-x:auto;max-width:100%;gap:5px;scrollbar-width:thin;-webkit-overflow-scrolling:touch}
+ aside nav button{flex:0 0 auto;min-width:max-content;padding:9px 11px;margin:0}
+ main{margin-left:0!important;padding-inline:clamp(10px,3vw,18px)!important}
+ .sequencer{width:100%;max-width:100%;overflow-x:auto;display:grid;grid-template-columns:60px repeat(16,34px)!important;overscroll-behavior-x:contain}
+ .highway,.sw-rehearsal-notes{max-width:100%;overflow-x:auto}
+ .saxExplorer .sax3d{height:min(68vh,480px)!important;min-height:280px!important}
+ .saxKeyList,.lickCategoryGrid,.intervalExamples,.intervalChoices{grid-template-columns:minmax(0,1fr)!important}
+ .sw-practice-groove-controls{gap:8px;padding:10px}
+ .sw-practice-groove-controls label{flex:1 1 125px}
+ .sw-practice-groove-controls input[type=range]{width:100%}
+ .guidedOverviewOnly .pathStages{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+ .keys,.chords{max-width:100%;overflow-x:auto;justify-content:flex-start}
+ .keys>*{flex-shrink:0}
+ .lesson button{float:none;margin-top:8px}
+ audio{width:100%;max-width:100%}
+ .songVideo{min-height:0}
+ footer{overflow-wrap:anywhere}
+}
+@media(max-width:380px){
+ .guidedOverviewOnly .pathStages{grid-template-columns:minmax(0,1fr)!important}
+ .card{padding:12px}
+ button{padding:10px 11px}
+}

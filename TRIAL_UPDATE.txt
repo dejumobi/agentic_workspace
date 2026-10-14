@@ -1,0 +1,9 @@
+Version 47: 7-day trial without a credit card
+
+Deploy the complete folder to Cloudflare Pages using the same existing D1 database, bindings, Stripe price IDs and secrets. No database migration is required.
+
+First trials per instrument use Stripe Checkout without required payment details. Missing payment method at trial end cancels the subscription; studio access is checked against the trial expiry on the server. Returning users select Subscribe and enter payment details for CAD $20/month. Previous instrument subscriptions do not get a second trial.
+
+Old open checkout links are expired when users start a new checkout through the app. Already-started trials and existing paid subscriptions retain their current Stripe settings. A customer with a saved Stripe payment method may still be charged at trial end; this update removes the requirement to supply a card, it does not remove cards already saved.
+
+Ensure Stripe subscription webhooks remain enabled. Verification: JavaScript syntax and mocked checkout/access tests; live Stripe checkout was not tested.

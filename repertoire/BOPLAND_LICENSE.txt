@@ -1,0 +1,12 @@
+BopLand.org notation collection
+Author/source: BopLand.org — https://bopland.org/home
+Licence: Creative Commons Attribution-ShareAlike 4.0 International
+https://creativecommons.org/licenses/by-sa/4.0/
+Permission statement: https://bopland.org/home (License and FAQ).
+Four unmodified PNG notation files, retrieved 2026-10-02.
+Original files: https://bopland.org/data/{id}.png
+IDs: 9sjJo9wH, gtBX8SHV, b1hxBjT9, 7TUDNKBV
+Database chord context: 4/4 | Dm7 | G7 | Cmaj |
+Changes: none to notation. Grouped into an offline reference collection.
+Redistributions and adaptations of this notation must retain attribution and comply with CC BY-SA 4.0. No endorsement is implied.
+Original SaxWorx glossary studies were composed independently; external lessons and books are linked/referenced, not reproduced.

@@ -1,0 +1,15 @@
+// SAXWORX SPEAKER MODE V27
+(function(){
+let mode=['headphones','bluetooth'].includes(localStorage.getItem('saxworx-recording-output'))?localStorage.getItem('saxworx-recording-output'):'speakers';
+const label=document.createElement('label');label.textContent='Listening through ';const select=document.createElement('select');select.id='studioOutputMode';select.setAttribute('aria-label','Recording speaker or headphone mode');for(const [value,text] of [['speakers','Speakers — reduce echo'],['headphones','Wired headphones — natural sax'],['bluetooth','Bluetooth headphones — expect delay']]){const option=document.createElement('option');option.value=value;option.textContent=text;option.selected=value===mode;select.append(option)}label.append(select);panel.querySelector('.row').after(label);
+const status=document.createElement('p');status.className='small';status.id='studioEchoStatus';status.setAttribute('role','status');label.after(status);
+function busy(){return studioPending||studioRecorder?.state==='recording'||studioRecorder?.state==='stopping'}
+function describe(){status.textContent=mode==='speakers'?'Speaker mode reduces the groove picked up by your microphone. Keep speaker volume moderate; compare a short take for sax tone.':'Headphone mode keeps echo cancellation off for a natural sax recording.'}
+select.onchange=()=>{if(busy()){select.value=mode;return}mode=select.value;localStorage.setItem('saxworx-recording-output',mode);describe()};describe();
+window.studioRecordingConstraints=function(){return {noiseSuppression:micMode==='reduce',echoCancellation:mode==='speakers',autoGainControl:false}};
+const originalMicMode=setMicMode;setMicMode=async function(value){await originalMicMode(value);if(studioStream)try{await Promise.all(studioStream.getAudioTracks().map(t=>t.applyConstraints(studioRecordingConstraints())));report()}catch{status.textContent='Could not update microphone processing. Stop recording before changing settings.'}};
+function report(){const track=studioStream?.getAudioTracks()[0];if(!track)return;const enabled=track.getSettings().echoCancellation;if(mode==='speakers'){status.textContent=enabled===true?'Speaker mode: browser reports echo cancellation ON. Test playback; effectiveness varies by device.':enabled===false?'Speaker mode: echo cancellation is OFF on this device. Lower speaker volume or use headphones to avoid a doubled groove.':'Speaker mode: echo cancellation requested; this browser does not report whether it is active.'}else{status.textContent=enabled===false?'Headphone mode: echo cancellation OFF. Natural microphone capture.':'Headphone mode requested. Browser-reported echo cancellation: '+(enabled===true?'ON':'not reported')}
+}
+const originalStart=startStudioRecording;startStudioRecording=async function(){if(busy())return;select.disabled=true;try{await originalStart();report()}finally{if(!busy())select.disabled=false}};
+const originalStop=stopStudioRecording;stopStudioRecording=function(){originalStop();select.disabled=false};
+})();

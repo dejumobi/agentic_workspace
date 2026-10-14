@@ -1,0 +1,14 @@
+SaxWorx fingering reference notes
+
+Written pitches use the scientific convention C4 = MIDI 60.
+Standard range: Bb3 through F#6. Tenor starter altissimo examples: G6 through C7.
+
+Fingering facts checked against The Woodwind Fingering Guide:
+https://www.wfg.woodwind.org/sax/sax_bas_1.html
+https://www.wfg.woodwind.org/sax/sax_bas_2.html
+https://www.wfg.woodwind.org/sax/sax_alt_4.html
+https://www.wfg.woodwind.org/sax/sax_alt_5.html
+
+SaxWorx's interface, key labels and simplified 3D geometry are original. No source chart images are bundled. Highlighting describes controls the player presses, rather than modelling every pad and linkage. A tenor starter is one possible route, not a universal fingering. Save your own combinations by note and instrument after checking against your saxophone and teacher's chart.
+
+High F# uses the dedicated high F# key plus high-F palm fingering; a front-F alternate is provided for instruments without that key. Model layout is schematic and differs from individual saxophone brands.

@@ -1,0 +1,15 @@
+{
+  "voice": "en-US-JennyNeural",
+  "rate": "-3%",
+  "prompts": {
+    "intro-welcome": "Welcome! Let's meet your piano before we start playing. We will find the keys, meet your fingers, and get comfortable. Take your time. If you are learning with a grown-up, ask them to join you.",
+    "intro-keys": "Look at the black keys. They repeat in groups of two and three. Find a group of two black keys. The white key just to their left is C. The next white keys are D and E. The white-key names go A, B, C, D, E, F, G, then start again. Move left for lower sounds, and right for higher sounds. Middle C is near the centre of your piano. In this app, we call it C four.",
+    "intro-black-keys": "Black keys can have two names. The black key between C and D is C sharp, or D flat. Sharp means one small step higher. Flat means one small step lower. For now, focus on finding the groups of two and three.",
+    "intro-hands": "Hold up your hands. Your thumb is finger one. Your index finger is two. Your middle finger is three. Your ring finger is four, and your little finger is five. The numbers are the same on both hands. For your first right-hand exercise, place your thumb on C, finger two on D, and finger three on E. Keep your fingers gently curved and your wrist comfortable.",
+    "intro-left-hand": "Let's meet the left hand. In a simple C to G position, put your little finger on C, your ring finger on D, your middle finger on E, your index finger on F, and your thumb on G. Going up, the finger numbers are five, four, three, two, one. Keep your hand soft. Never force a stretch.",
+    "intro-seat": "Sit where your arms can move freely. Relax your shoulders. Keep your wrists comfortable, roughly in line with your forearms. Support your feet if they cannot reach the floor. Ask a grown-up to help adjust your seat if needed. Your hands should feel comfortable. Stop and take a break if anything hurts.",
+    "intro-challenge": "Time for a little discovery. Find C on the picture. It is just to the left of two black keys. Then find D, and then E. Take your time. You can try again whenever you like.",
+    "intro-your-piano": "Now try C, D and E on your own piano. Use right-hand fingers one, two and three. Choose Start my turn and allow microphone access, or choose the on-screen keys. The microphone listens for notes. It cannot check your fingers or posture.",
+    "intro-complete": "You have met the keys, your fingers, and a comfortable playing position. You are ready for your first small practice task. Listen first, try slowly, and enjoy making music."
+  }
+}

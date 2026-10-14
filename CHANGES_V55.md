@@ -1,0 +1,1 @@
+V55: SaxWorx phrase groove rehearsal with 12 synthesized genre patterns, loop, tempo, note-following. GuitarWorx tasks now 3 two-bar exercises. Existing voice recordings remain unchanged. Note: groove timing and playback need browser acceptance testing.

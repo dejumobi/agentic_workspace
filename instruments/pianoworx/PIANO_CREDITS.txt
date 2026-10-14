@@ -1,0 +1,4 @@
+Acoustic Grand Piano: FluidR3 GM soundfont by Frank Wen, rendered to MP3 by Benjamin Gleitzman / midi-js-soundfonts.
+Source: https://github.com/gleitz/midi-js-soundfonts/tree/gh-pages/FluidR3_GM
+Soundfont licence: Creative Commons Attribution 3.0: https://creativecommons.org/licenses/by/3.0/
+Selected original MP3 note samples C3–C6 bundled without audio modification. Playback applies a gain/release envelope.

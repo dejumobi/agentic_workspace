@@ -1,0 +1,1 @@
+V71: replaces the main saxophone model with the user-selected realistic tenor image. Adds image zoom and reset, retains live fingering hand chart, key explanations and all 232 exercises. This is a static image, not a rotatable model. Upload ZIP contents to the existing Cloudflare Pages project.

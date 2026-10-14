@@ -1,0 +1,1 @@
+self.addEventListener('install',()=>self.skipWaiting());self.addEventListener('activate',e=>e.waitUntil((async()=>{for(const k of await caches.keys())if(/saxworx|dejumobi|pianoworx|guitarworx/i.test(k))await caches.delete(k);await self.clients.claim()})()));
